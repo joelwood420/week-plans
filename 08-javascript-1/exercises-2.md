@@ -104,8 +104,18 @@ let variable = 0;
 while (variable < 100) {
     variable++;
 
-    if (variable % 3 != 0) {
-        console.log(variable)
+    let output = "";
+    if (variable % 3== 0) {
+     output += 'pop'
+    } if (variable % 5 == 0){
+     output += 'buzz'
     }
+    
+     else {
+        output = variable
+     } 
+
+     console.log(output);
+   
 }
 
